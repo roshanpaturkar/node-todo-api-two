@@ -1,4 +1,4 @@
-var env = 'mongo ds217131.mlab.com:17131/my_todo_nodeapp -u todo_user -p todoapp@123';// || 'developement';
+var env = process.env.NODE_ENV || 'developement';
 
 if (env === 'developement' || env === 'test') {
   var config = require('./config.json');
